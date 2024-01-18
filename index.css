@@ -12,8 +12,7 @@ body {
 }
 
 .content {
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,7 +25,7 @@ body {
 
 .card {
   background: #ffffff;
-  width: 29rem;
+  max-width: 29rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,7 +50,7 @@ body {
 .card-title {
   font-weight: 900;
   color: var(--dark-blue);
-  font-size: 29px;
+  font-size: 1.6rem;
 }
 
 .card-info {
@@ -67,13 +66,18 @@ body {
   width: 100%;
   background: var(--very-pale-blue);
   font-weight: 700;
-  background-image: url(./images/icon-music.svg);
-  background-repeat: no-repeat;
-  background-position: 20px;
   padding: 1.6rem 1.5rem;
-  padding-left: 5.3rem;
   border-radius: 10px;
   margin-bottom: 1rem;
+}
+
+.card-plan-figure {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.card-plan-figure img {
+  width: auto;
 }
 
 .card-plan-info {
@@ -85,17 +89,17 @@ body {
 .card-plan-info-title {
   font-weight: 900;
   color: var(--dark-blue);
-  font-size: 17px;
+  font-size: 1.1rem;
 }
 
 .card-plan-info-price {
   color: var(--desaturated-blue);
   font-weight: 500;
-  font-size: 17.5px;
+  font-size: 1.1rem;
 }
 
 .card-plan-change {
-  font-size: 15px;
+  font-size: 1rem;
   color: var(--bright-blue);
 }
 
@@ -112,6 +116,15 @@ body {
   gap: 2rem;
   width: 100%;
   margin-top: 1rem;
+}
+
+.card-option {
+  border: none;
+  background: inherit;
+}
+
+.card-option:hover {
+  cursor: pointer;
 }
 
 .card-option-payment {
@@ -135,7 +148,6 @@ body {
 .card-option-cancel {
   color: var(--desaturated-blue);
   font-weight: 900;
-  text-decoration: none;
 }
 
 .card-option-cancel:hover {
